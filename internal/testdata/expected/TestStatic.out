@@ -1,0 +1,10 @@
+Here is some code wrapping text escaping to go.
+Testing quotes: "'`
+<p>
+Escaped html &lt;
+</p>
+<p>	This is text that<br>
+	is escaped.</p>
+<p>	And has html paragraphs inserted.<br>
+</p>
+This should be testStatic: TestStatic

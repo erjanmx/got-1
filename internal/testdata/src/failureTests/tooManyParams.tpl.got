@@ -1,0 +1,16 @@
+package template
+
+import (
+	"io"
+	"fmt"
+)
+
+{{define badBlock 1}}
+{{
+Hey $1
+}}
+
+func tooManyParams(_w io.Writer) (err error) {
+{{badBlock a,b}}
+}
+

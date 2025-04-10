@@ -1,0 +1,28 @@
+{{define package}}template{{end package}}
+{{define name}}TestPredefines{{end name}}
+
+{{define body}}
+{{
+{{# templatePath}}
+{{templateName}}
+{{templateRoot}}
+{{templateParent}}
+{{# outPath}}
+{{outName}}
+{{outRoot}}
+{{outParent}}
+{{# making sure defaults are there }}
+{{includeName}}
+{{includeRoot}}
+{{includeParent}}
+{{# test processing functions }}
+{{importPath}}
+{{importParent}}
+
+{{: "predef.inc" }}
+
+}}
+{{end body}}
+
+{{: "runner.inc" }}
+

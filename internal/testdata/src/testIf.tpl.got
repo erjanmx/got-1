@@ -1,0 +1,28 @@
+{{define package}}template{{end package}}
+{{define name}}TestIf{{end name}}
+
+{{define body}}
+a:= 1
+b := 1
+
+{{if a == b }}
+    Hi there.
+{{if}}
+
+{{if a != b }}
+    Hi there.
+{{else}}
+    Bye there.
+{{if}}
+
+{{if a != b }}
+    Hi there.
+{{elseif a == b}}
+    Be square.
+{{if}}
+
+
+{{end body}}
+
+
+{{: "runner.inc"}}

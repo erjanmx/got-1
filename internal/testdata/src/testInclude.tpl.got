@@ -1,0 +1,43 @@
+package template
+
+import (
+	"io"
+	"fmt"
+	"github.com/authorizedmi/got/internal/testdata/registry"
+)
+
+{{: "testInclude.inc" }}
+
+func TestInclude(_w io.Writer) (err error) {
+{{
+The end.
+}}
+
+{{> aBlock }}
+
+// a test of substituting a name
+{
+	var {{> name }} string
+	_ = {{> name }}
+}
+
+{{# the following should be found in the inc directory by the -I flag }}
+{{: "testInclude2.inc" }}
+
+{{
+{{# Including an html file in text mode }}
+{{:! "testInclude3.html" }}
+}}
+
+{{
+{{# Including an html file in html mode }}
+{{:h "testInclude3.html" }}
+}}
+
+
+    return
+}
+
+func init() {
+    registry.RegisterTest(TestInclude, "TestInclude")
+}
