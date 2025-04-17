@@ -399,7 +399,7 @@ The following fragments are predefined:
 * `{{templatePath}}` is the full path of the template file being processed
 * `{{templateName}}` is the base name of the template file being processed, including any extensions
 * `{{templateRoot}}` is the base name of the template file being processed without any extensions
-* `{{templateParent}}` is the directory name of the template file being processed, without the preceeding path
+* `{{templateParent}}` is the directory name of the template file being processed, without the preceding path
 * `{{includePath}}` is the full path of the file that the includePath fragment appears in.
 * `{{includeName}}` is the base name of the file that the includeName fragment appears in.
 * `{{includeRoot}}` is the base name of the file that the includeRoot fragment appears in without any extensions.
@@ -407,7 +407,7 @@ The following fragments are predefined:
 * `{{outPath}}` is the full path of the output file being written
 * `{{outName}}` is the base name of the output file being written, including any extensions
 * `{{outRoot}}` is the base name of the output file being written without any extensions
-* `{{outParent}}` is the directory name of the output file being written, without the preceeding path
+* `{{outParent}}` is the directory name of the output file being written, without the preceding path
 * `{{importPath}}` produces the import path of the output file
 * `{{importParent}}` produces the parent of the import path of the output file
 
